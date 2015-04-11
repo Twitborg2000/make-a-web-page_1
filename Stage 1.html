@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+      <title>Me learning to code</title>
+      <link rel="stylesheet" type="text/css" href="stage1.css">
+  </head>
+
+<body>
+	<div class ="lesson">
+		<h1>Table of Contents</h1>
+		<ol>
+			<li><a href="#lesson-1">Lesson 1: BASICS</a></li>
+			<li><a href="#lesson-2">Lesson 2: Web Pages, Documents, And Structure</a></li>
+			<li><a href="#lesson-3">Lesson 3:Box Sizing</a></li>
+		</ol>
+	</div>
+	<div class="lesson">
+		<h1 id="lesson-1">Lesson 1: BASICS</h1>
+		<div class="lesson_content">
+			<h2>How The Web Works</h2>
+			When you see a webpage on your screen, basically this happens:
+			<p>
+			The server finds the appropriate HTML document and sends it back to the user's computer. A web browser interprets the page and displays it on the computerscreen. One of the key elements in getting the browser to interpret the page in a way that makes it visually appealing to you and me is via tags.Tags tell the computer what to do with the text on the page in a way it can understand.
+			</p>
+			<ol>
+				<li>Http - is the main communications protocol used on the web.</li>
+
+				<li>Servers - computers that host files and programmes (that you acces through your computer).</li>
+
+				<li>Internet - world's largest network of computer networks. It all started not too long ago. <a href="https://http://www.amazon.com/Where-Wizards-Stay-Up-Late/dp/0684832674/course/nd000"> Here's a book that tells the story of the internet</a></li>
+
+				<li>Browser - A program that runs on your computer. It nterprets and displays files found on servers.</li>
+			</ol>
+		
+		
+			<div class="summary">
+				<h2>Thinking Like A Programmer</h2>
+				Procedural thinking: Take complex problems and brake them down into smaller steps. This is one of the main reasons I'm taking this course. While I do now some abstract thinkng (e.g. basic math) I'm not that good at working in a structured way. I get carried away a lot by what I'm focusing on... like this text. It's getting waaaay too long. Stop! Focus Mads! You need to focus on your HTML and CSS! What I hope to get better at are:
+
+					
+				<ol>
+				<li>Systematic Debugging: Identify problems and track down causes and fix them.</li>
+		
+			
+				<li>Technological Empathy: Uderstand how a computer sees things. This is somethin I'm struggling with.</li>
+		
+				</ol>
+				<div>
+					<h3>Talking like a programmer: Some basic lingo </h3>
+					<p>
+					<b>HTML</b>stands for Hypertext Markup Language. HTML documents form the majority of the content on the web. HTML documents contain "text content" which describes "what you see" and markup which describes "how it looks". This is what the tags described above do.
+					</p>
+					<div>
+					
+						<h4>HTML - the basic concepts</h4>
+						<b>Tags And Elements:</b>
+					
+						HTML documents are made of HTML elements. When writing HTML, we tell browsers the type of each element by using HTML tags:
+						<p>
+						HTML markup: (tag)content(tag)
+						The tag, the content and the closing tag together constitutes an element. For example: &lt; {opentag}content &gt; {closetag}.
+						<p>
+						<b>Why Computers Are Stupid</b>
+						</p>
+						<p>
+						They interpret instructions literally. Small mistakes, like misspelling or incorrect tags and element construction by a programmer can have a huge impact. often it will mean that the program will not work as intended.
+						</p>
+
+						<b>Inline / Block Elements</b>
+						HTML elements are either inline or block. Block elements form an "invisible box" around the content inside of them.
+					</div>
+				</div>
+					<div>
+						<h4>How Learning To Code (or anything else) Works</h4>
+						You can break down learning to code into 4 stages:<ol>
+						<li>Novice - ignorance (No knowledge of subject)</li>
+						<li>Awareness - when you notice "become aware of some new information." That's sort of where I am with this programming thing.</li>
+						<li>Ability - practicing learned skills</li>
+						<li>Fluency - being able to proform tasks with little thought because they come to you naturally.</li>
+						</ol>
+					</div>	
+			</div>
+		</div>
+	</div>
+	<div class="lesson">
+		<h1 id="lesson-2">Lesson 2: Web Pages, Documents, And Structure</h1>
+		<div class="lesson_content">
+			<h2>Creating Structured Documents With HTML</h2>
+
+			<b>Important Things To Take Away:</b>
+			<ol>
+			<li>HTML & CSS are both "Languages"</li>
+			<li>HTML controls the "structure" of a web page</li>
+			<li>CSS controls the "style" of a web page (How it looks)</li>
+			</ol>
+			<p>
+			DOM - Document Object Model: A webpage has a tree-like structure. This is what "DOM" refers to.
+			All elements on a web page are boxes. The "tree-like structure" comes from the fact that HTML elements can have other elements inside of them. Browsers display this structure as a series of nested boxes (Right click and choose show source or somethin... in Danish that's what is says). The more indented an element is; the more deeply nested it's corresponding "box" will be.
+			</p>
+
+			<div class="summary">
+				<h3>How do you actually do it</h3>
+				Start by coding big boxes first then add the smaller subboxes. The Title and a graphic might be the first box.Then the body containing text and url links with graphics or video or music would be the second big box. Then break the graphics and text and other elements into smaller boxes to code.
+				<p>
+				<strong>Boxes To HTML</strong>
+				</p>
+				Start by using: 
+				<p>
+				&lt;div&gt; &lt;/div&gt;
+				</p>
+				For each natural box which are text, images, video, and so on. Next add place holders so you are reminded what goes in there:
+
+				<div>
+					&lt;div&gt; My App &lt;/div&gt;
+					<p>
+					&lt;div&gt; image &lt;/div&gt;
+					</p>
+					&lt;div&gt; text &lt;/div&gt;
+
+					<div>
+						Next apply style. ex. "class attribute" (like labels on a box) to remind you what is inside. Class names need to make sense:
+						<p>
+						ex. &lt;div class="title"&gt;My App&lt;/div&gt;
+						</p>
+						&lt;div class="app&gt;"
+						<p>
+						&lt;div class="screenshot">image&lt;/div&gt;
+						</p>
+						&lt;div class="description">text&lt;/div&gt; 
+					</div>
+				</div>
+				<div>
+					<h4>The Tools Programmers Use To Write Code</h4>
+					<ol>
+					<li>scratchpad for small projects</li>
+					<li>Codepen is sort of intermediate tool</li>
+					<li>Sublime text 2 for larger more complex projects</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="lesson">
+		<h1 id="lesson-3">Lesson 3:Box Sizing</h1>
+		
+		<div class="lesson_content">
+			<h2>Four Main Points</h2>
+				<ol>
+				<li>HTML elements are boxes and each box has 4 components- margins, borders, padding, and content.
+				<li>Because there are so many components to each box, it can often be hard to get the size of the box right.</li>
+				<li>There are two techniques you can use to help deal with sizing issues. set sizes interms of percent rather than pixels, or set the box-sizing attribute to border-box for every element.</li>
+				<li>Different browsers work slightly differently. Sometimes this causes different browsers to display the same code differently.</li>
+				</ol>
+			<p>
+				<b>Box Positioning</b>
+				Divs are block elements (as opposed to inline elements). By default they take up the entire width of a page.
+				adding the rule [display-flex;] to the appropriate css will over ride this behavior and let divs appear next t eachother.
+			</p>
+			<div class="summary">
+				<h3>Code, Test, Refine</h3>
+				A basic rule of coding is: <strong>Do not repeat yourself if you do not have to</strong>. Avoiding repition has the following advantages:
+				<ul>
+					<li>You write less code: This makes your code easier to manage</li>
+					<li>When, not if, you make a mistake, you only have to correct it in one place</li>
+					<li>Fewer lines of code will ususally make the code faster to execute for the computer</li>
+				</ul>
+				Going forward with HTML and CSS the following process will be useful:
+				<ul>	
+					<li>look for natural boxes</li>
+					<li>look for repeated styles and semantic elements</li>
+					<li>write your HTML</li>
+					<li>apply styles (from biggest to smallest)</li>
+					<li>fix the small things</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
